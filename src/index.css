@@ -1,0 +1,104 @@
+/* ==========================================================================
+   LIFTLY DESIGN SYSTEM - CLEAN MODERN COBALT & CHARCOAL THEME
+   Inspired by modern minimalist fitness tracking (Lyfta / Apple Fitness)
+   ========================================================================== */
+
+:root {
+  /* Surface Palette: Deep Charcoal & Slate */
+  --bg-canvas: #090B10;
+  --bg-card: #121620;
+  --bg-card-hover: #181E2C;
+  --bg-elevated: #1D2436;
+  --bg-input: #0E121A;
+  --bg-glass: rgba(18, 22, 32, 0.85);
+
+  /* Primary Brand Accent: Electric Royal Cobalt (Lyfta signature blue) */
+  --brand-blue: #2563EB;
+  --brand-blue-hover: #1D4ED8;
+  --brand-blue-light: #3B82F6;
+  --brand-blue-soft: rgba(37, 99, 235, 0.12);
+  --brand-blue-border: rgba(59, 130, 246, 0.3);
+  --brand-blue-glow: 0 0 20px rgba(37, 99, 235, 0.25);
+
+  /* Functional Accents */
+  --accent-success: #10B981;
+  --accent-success-soft: rgba(16, 185, 129, 0.12);
+  --accent-warning: #F59E0B;
+  --accent-warning-soft: rgba(245, 158, 11, 0.12);
+  --accent-danger: #EF4444;
+
+  /* Neutral Borders & Dividers */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-medium: rgba(255, 255, 255, 0.14);
+  --border-hover: rgba(255, 255, 255, 0.22);
+
+  /* Typography Colors */
+  --text-primary: #FFFFFF;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+  --text-dim: #475569;
+
+  /* Typography Fonts */
+  --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Spacings & Radii */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Clean elevation shadow */
+  --shadow-card: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+  --shadow-float: 0 12px 32px -4px rgba(0, 0, 0, 0.7);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Subtle, clean scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-canvas);
+}
+::-webkit-scrollbar-thumb {
+  background: #252e42;
+  border-radius: var(--radius-full);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-blue-light);
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
